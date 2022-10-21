@@ -1,0 +1,151 @@
+:root {
+  --accent-color: #E25544;
+  --text-color: #485268;
+  --background-color: #fff;
+  --border-color: #DEE2ED;
+  --hover-color:#E5E5E5;
+}
+
+html {
+  font-family: Montserrat;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+b {
+  font-weight: 700;
+}
+
+.content__container {
+  width: 595px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  height: 100vh;
+}
+
+/* #region about*/
+.about {
+  display: flex;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 32px 40px 24px 40px;
+}
+
+.about__header {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.233333333;
+  margin-bottom: 8px;
+}
+
+.about__shortdescription {
+  font-size: 12px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.about__longdescription {
+  width: 351px;
+  line-height: 1.5;
+}
+
+.about__foto {
+  border-radius: 50%;
+  margin-left: 50px;
+  border: 1px solid #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* #endregion */
+
+/* #region contacts */
+.section {
+ padding: 0 40px;
+ margin-bottom: 24px;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact__link {
+  color: var(--text-color);
+}
+
+.contact__link:visited {
+  color: var(--text-color);
+}
+
+.contact__link:hover {
+  color: var(--hover-color);
+}
+/* #endregion */
+
+/* #region experience */
+.section__name {
+  color: #E25544;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.section__container {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__header {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.description__block {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.section__description div {
+  padding-left: 8px;
+  width: 351px;
+  border-left: 1px dashed var(--border-color);
+}
+
+.section__description div:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.section__description div *:not(:last-child) {
+  margin-bottom: 8px;
+}
+/* #endregion */
+
+.description__section {
+  display: flex;
+  border: none;
+  padding: 0;
+  width: auto;
+}
+
+.description__section div {
+  padding-left: 8px;
+  border-left: 1px dotted var(--border-color);
+  width: 171px;
+}
+
+.description__section div:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.last__section {
+  border-bottom: none;
+}
